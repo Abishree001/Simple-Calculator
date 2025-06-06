@@ -1,0 +1,101 @@
+/* Background with smooth gradient */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #00c9ff, #92fe9d);
+}
+
+/* Calculator container with glassmorphism effect */
+.calculator {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 340px;
+  color: white;
+}
+
+/* Display styling */
+.display {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 2.4em;
+  text-align: right;
+  margin-bottom: 25px;
+  min-height: 60px;
+  overflow-x: auto;
+  color: #fff;
+  box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Button layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Base button style */
+button {
+  font-size: 1.3em;
+  padding: 20px 0;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Number buttons */
+button[data-num] {
+  background: #4dabf7;
+}
+
+button[data-num]:hover {
+  background: #339af0;
+}
+
+/* Operator buttons */
+button.operator {
+  background: #ff6b6b;
+}
+
+button.operator:hover {
+  background: #fa5252;
+}
+
+/* Equal button */
+button.equal {
+  background: #51cf66;
+  grid-column: span 2;
+}
+
+button.equal:hover {
+  background: #40c057;
+}
+
+/* Clear button */
+button.clear {
+  background: #ffa94d;
+}
+
+button.clear:hover {
+  background: #ff922b;
+}
+
+/* Backspace button */
+#backspace {
+  background: #845ef7;
+}
+
+#backspace:hover {
+  background: #7950f2;
+}
